@@ -1,8 +1,9 @@
-title: Pathwar Assets
-baseURL: https://assets.pathwar.land
+title: Ultreme Assets
+baseURL: https://assets.ultre.me
 
 params:
-  favicon: images/pathwar-favicon.png
+  favicon: images/favicon.jpg
+  logo: images/favicon.jpg
   # category_order: ['logotype', 'hack-sparrow']
 
   # Map mimetype to placeholder icons
