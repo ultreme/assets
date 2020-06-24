@@ -1,0 +1,18 @@
+{
+  "name": "pathwar-assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pre-build": "node scripts/generate-content.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.1.5",
+    "mime-types": "^2.1.24",
+    "netlify-plugin-hugo-cache-resources": "^0.1.4",
+    "netlify-plugin-submit-sitemap": "^0.1.4"
+  }
+}
