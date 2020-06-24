@@ -1,11 +1,11 @@
 [build]
 publish = "public"
 command = "npm run pre-build && hugo --gc --minify"
-base = "assets/.netlify/"
-ignore = "git diff --quiet HEAD^ HEAD -- ../"
+base = ".netlify/"
+ignore = "(exit 1)"
 
 [context.production.environment]
-HUGO_VERSION = "0.59.1"
+HUGO_VERSION = "0.73.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
@@ -13,13 +13,13 @@ HUGO_ENABLEGITINFO = "true"
 command = 'npm run pre-build && hugo --gc --minify -b $DEPLOY_PRIME_URL --enableGitInfo'
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.59.1"
+HUGO_VERSION = "0.73.0"
 
 [context.branch-deploy]
 command = 'npm run pre-build && hugo --gc --minify -b $DEPLOY_PRIME_URL --enableGitInfo'
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.59.1"
+HUGO_VERSION = "0.73.0"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
